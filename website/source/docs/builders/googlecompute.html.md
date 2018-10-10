@@ -79,13 +79,16 @@ straightforwarded, it is documented here.
 
 ### Precedence of Authentication Methods
 
-Packer looks for credentials in the following places, preferring the first location found:
+Packer looks for credentials in the following places, preferring the first
+location found:
 
 1.  An `account_file` option in your packer file.
 
-2.  A JSON file (Service Account) whose path is specified by the `GOOGLE_APPLICATION_CREDENTIALS` environment variable.
+2.  A JSON file (Service Account) whose path is specified by the
+`GOOGLE_APPLICATION_CREDENTIALS` environment variable.
 
-3.  A JSON file in a location known to the `gcloud` command-line tool. (`gcloud` creates it when it's configured)
+3.  A JSON file in a location known to the `gcloud` command-line tool.
+(`gcloud` creates it when it's configured)
 
     On Windows, this is:
 
@@ -95,7 +98,9 @@ Packer looks for credentials in the following places, preferring the first locat
 
         $HOME/.config/gcloud/application_default_credentials.json
 
-4.  On Google Compute Engine and Google App Engine Managed VMs, it fetches credentials from the metadata server. (Needs a correct VM authentication scope configuration, see above)
+4.  On Google Compute Engine and Google App Engine Managed VMs, it fetches
+credentials from the metadata server. (Needs a correct VM authentication scope
+configuration, see above.)
 
 ## Examples
 
