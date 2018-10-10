@@ -274,7 +274,7 @@ Now save the following text in a file named `firstrun.json`:
 and to build, run `packer build firstrun.json`
 
 Note that if you wanted to use a `source_ami` instead of a `source_ami_filter`
-it might look something like this: `"source_ami": "ami-fce3c696",`
+it might look something like this: `"source_ami": "ami-fce3c696"`.
 
 Your output will look like this:
 

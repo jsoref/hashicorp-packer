@@ -330,7 +330,7 @@ Startup scripts can be a powerful tool for configuring the instance from which t
 The builder will wait for a startup script to terminate. A startup script can be provided via the
 `startup_script_file` or 'startup-script' instance creation `metadata` field. Therefore, the build
 time will vary depending on the duration of the startup script. If `startup_script_file` is set,
-the 'startup-script' `metadata` field will be overwritten. In other words,`startup_script_file`
+the 'startup-script' `metadata` field will be overwritten. In other words, `startup_script_file`
 takes precedence.
 
 The builder does not check for a pass/fail/error signal from the startup script, at this time. Until
