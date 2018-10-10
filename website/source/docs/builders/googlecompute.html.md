@@ -340,7 +340,7 @@ when a startup script fails.
 ### Windows
 
 A Windows startup script can only be provided via the 'windows-startup-script-cmd' instance
-creation `metadata` field. The builder will *not* wait for a Windows startup scripts to
+creation `metadata` field. The builder will *not* wait for a Windows startup script to
 terminate. You have to ensure that it finishes before the instance shuts down.
 
 ### Logging
