@@ -328,9 +328,9 @@ builder.
 
 Startup scripts can be a powerful tool for configuring the instance from which the image is made.
 The builder will wait for a startup script to terminate. A startup script can be provided via the
-`startup_script_file` or 'startup-script' instance creation `metadata` field. Therefore, the build
+`startup_script_file` or `startup-script` instance creation `metadata` field. Therefore, the build
 time will vary depending on the duration of the startup script. If `startup_script_file` is set,
-the 'startup-script' `metadata` field will be overwritten. In other words, `startup_script_file`
+the `startup-script` `metadata` field will be overwritten. In other words, `startup_script_file`
 takes precedence.
 
 The builder does not check for a pass/fail/error signal from the startup script, at this time. Until
@@ -339,14 +339,14 @@ when a startup script fails.
 
 ### Windows
 
-A Windows startup script can only be provided via the 'windows-startup-script-cmd' instance
+A Windows startup script can only be provided via the `windows-startup-script-cmd` instance
 creation `metadata` field. The builder will *not* wait for a Windows startup script to
 terminate. You have to ensure that it finishes before the instance shuts down.
 
 ### Logging
 
 Startup script logs can be copied to a Google Cloud Storage (GCS) location specified via the
-'startup-script-log-dest' instance creation `metadata` field. The GCS location must be writeable by
+`startup-script-log-dest` instance creation `metadata` field. The GCS location must be writeable by
 the credentials provided in the builder config's `account_file`.
 
 ## Gotchas
