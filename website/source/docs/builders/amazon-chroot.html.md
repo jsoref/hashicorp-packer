@@ -179,24 +179,24 @@ each category, the available configuration keys are alphabetized.
     -   `iops` (number) - The number of I/O operations per second (IOPS) that the
         volume supports. See the documentation on
         [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsBlockDevice.html)
-        for more information
+        for more information.
 
     -   `no_device` (boolean) - Suppresses the specified device included in the
-        block device mapping of the AMI
+        block device mapping of the AMI.
 
-    -   `snapshot_id` (string) - The ID of the snapshot
+    -   `snapshot_id` (string) - The ID of the snapshot.
 
     -   `virtual_name` (string) - The virtual device name. See the documentation on
         [Block Device
         Mapping](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BlockDeviceMapping.html)
-        for more information
+        for more information.
 
     -   `volume_size` (number) - The size of the volume, in GiB. Required if not
-        specifying a `snapshot_id`
+        specifying a `snapshot_id`.
 
     -   `volume_type` (string) - The volume type. `gp2` for General Purpose (SSD)
         volumes, `io1` for Provisioned IOPS (SSD) volumes, and standard for Magnetic
-        volumes
+        volumes.
 
 -   `region_kms_key_ids` (map of strings) - a map of regions to copy the ami to,
     along with the custom kms key id to use for encryption for that region.
@@ -228,7 +228,7 @@ each category, the available configuration keys are alphabetized.
     to the `mount` command ran by Packer. Because this command is ran in a
     shell, user discretion is advised. See [this manual page for the mount
     command](http://linuxcommand.org/man_pages/mount8.html) for valid file
-    system specific options
+    system specific options.
 
 -   `nvme_device_path` (string) - When we call the mount command (by default
     `mount -o device dir`), the string provided in `nvme_mount_path` will
