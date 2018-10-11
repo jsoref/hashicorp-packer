@@ -194,7 +194,7 @@ builder.
     instance to consume up to its available CPU Credits.
     See the AWS documentation for [T2 Unlimited]
     (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-unlimited.html)
-    and the 'T2 Unlimited Pricing' section of the [Amazon EC2 On-Demand
+    and the **T2 Unlimited Pricing** section of the [Amazon EC2 On-Demand
     Pricing](https://aws.amazon.com/ec2/pricing/on-demand/) document for more
     information.
     By default this option is disabled and Packer will set up a [T2
