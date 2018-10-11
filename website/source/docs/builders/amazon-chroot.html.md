@@ -171,7 +171,7 @@ each category, the available configuration keys are alphabetized.
     -   `device_name` (string) - The device name exposed to the instance (for
         example, `/dev/sdh` or `xvdh`). Required when specifying `volume_size`.
 
-    -   `encrypted` (boolean) - Indicates whether to encrypt the volume or not
+    -   `encrypted` (boolean) - Indicates whether or not to encrypt the volume.
 
     -   `kms_key_id` (string) - The ARN for the KMS encryption key. When
         specifying `kms_key_id`, `encrypted` needs to be set to `true`.
