@@ -194,7 +194,7 @@ Packer has [acceptance tests](https://en.wikipedia.org/wiki/Acceptance_testing)
 for various builders. These typically require an API key (AWS, GCE), or
 additional software to be installed on your computer (VirtualBox, VMware).
 
-If you're working on a new builder or builder feature and want verify it is
+If you're working on a new builder or builder feature and want to verify it is
 functioning (and also hasn't broken anything else), we recommend running the
 acceptance tests.
 
