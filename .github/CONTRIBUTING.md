@@ -107,6 +107,8 @@ From there, open your fork in your browser to open a new pull-request.
 will break if you `git clone` your fork instead of using `go get` on the main
 Packer project.
 
+**Note:** See [Working on forks](#Working on forks) for a better way to use `git push ...`.
+
 ### Pull Request Lifecycle
 
 1. You are welcome to submit your pull request for commentary or review before
