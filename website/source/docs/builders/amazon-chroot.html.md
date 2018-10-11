@@ -63,7 +63,7 @@ each category, the available configuration keys are alphabetized.
 -   `ami_name` (string) - The name of the resulting AMI that will appear when
     managing AMIs in the AWS console or via APIs. This must be unique. To help
     make this unique, use a function like `timestamp` (see [template
-    engine](/docs/templates/engine.html) for more info)
+    engine](/docs/templates/engine.html) for more info).
 
 -   `secret_key` (string) - The secret key used to communicate with AWS. [Learn
     how to set this](/docs/builders/amazon.html#specifying-amazon-credentials)
