@@ -143,7 +143,7 @@ builder.
     set it manfully.
 
 -   `internet_max_bandwidth_out` (string) - Maximum outgoing bandwidth to the public
-    network, measured in Mbps (Mega bit per second).
+    network, measured in Mbps (Mega bits per second).
 
     Value range:
     -   `PayByBandwidth`: \[0, 100\]. If this parameter is not specified, API automatically sets it to 0 Mbps.
