@@ -139,13 +139,25 @@ Packer project.
 The easiest way to work on a fork is to set it as a remote of the Packer
 project. After following the steps in "Setting up Go to work on Packer":
 
-1. Navigate to `$GOPATH/src/github.com/hashicorp/packer`
-2. Add the remote by running
-   `git remote add <name of remote> <github url of fork>`. For example:
-   `git remote add mwhooker https://github.com/mwhooker/packer.git`.
-3. Checkout a feature branch: `git checkout -b new-feature`
-4. Make changes
+1. Navigate to the code:
+
+   `cd $GOPATH/src/github.com/hashicorp/packer`
+
+2. Add the remote by running:
+
+   `git remote add <name of remote> <github url of fork>`
+
+   For example:
+
+   `git remote add mwhooker https://github.com/mwhooker/packer.git`
+
+3. Checkout a feature branch:
+
+   `git checkout -b new-feature`
+
+4. Make changes.
 5. (Optional) Push your changes to the fork:
+
    `git push -u <name of remote> new-feature`
 
 This way you can push to your fork to create a PR, but the code on disk still
