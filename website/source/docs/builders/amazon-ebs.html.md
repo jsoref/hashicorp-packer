@@ -159,7 +159,7 @@ builder.
 -   `disable_stop_instance` (boolean) - Packer normally stops the build instance
     after all provisioners have run. For Windows instances, it is sometimes
     desirable to [run Sysprep](http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ami-create-standard.html)
-    which will stop the instance for you. If this is set to true, Packer *will not*
+    which will stop the instance for you. If this is set to `true`, Packer *will not*
     stop the instance but will assume that you will send the stop signal
     yourself through your final provisioner. You can do this with a
     [windows-shell provisioner](https://www.packer.io/docs/provisioners/windows-shell.html).
@@ -201,9 +201,9 @@ builder.
     Standard](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-std.html)
     instance instead.
 
-    To use T2 Unlimited you must use a T2 instance type e.g. t2.micro.
+    To use T2 Unlimited you must use a T2 instance type e.g. `t2.micro`.
     Additionally, T2 Unlimited cannot be used in conjunction with Spot
-    Instances e.g. when the `spot_price` option has been configured.
+    Instances, e.g. when the `spot_price` option has been configured.
     Attempting to do so will cause an error.
 
     !&gt; **Warning!** Additional costs may be incurred by enabling T2
@@ -331,7 +331,7 @@ builder.
     -   `owners` (array of strings) - Filters the images by their owner. You may
         specify one or more AWS account IDs, "self" (which will use the account
         whose credentials you are using to run Packer), or an AWS owner alias:
-        for example, "amazon", "aws-marketplace", or "microsoft".
+        for example, `amazon`, `aws-marketplace`, or `microsoft`.
         This option is required for security reasons.
 
     -   `most_recent` (boolean) - Selects the newest created image when true.
