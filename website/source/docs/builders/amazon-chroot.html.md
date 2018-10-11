@@ -29,7 +29,7 @@ Packer, we recommend starting with the [amazon-ebs
 builder](/docs/builders/amazon-ebs.html), which is much easier to use.
 
 The builder does *not* manage AMIs. Once it creates an AMI and stores it in your
-account, it is up to you to use, delete, etc. the AMI.
+account, it is up to you to use, delete, etc., the AMI.
 
 ## How Does it Work?
 
