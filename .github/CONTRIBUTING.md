@@ -124,8 +124,8 @@ Packer project.
 
 1. Once all outstanding comments and checklist items have been addressed, your
   contribution will be merged! Merged PRs will be included in the next
-  Packer release. The core team takes care of updating the CHANGELOG as they
-  merge.
+  Packer release. The core team takes care of updating the
+  [CHANGELOG.md](../CHANGELOG.md) as they merge.
 
 1. In rare cases, we might decide that a PR should be closed without merging.
   We'll make sure to provide clear reasoning when this happens.
