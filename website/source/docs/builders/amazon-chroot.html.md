@@ -58,7 +58,7 @@ each category, the available configuration keys are alphabetized.
 ### Required:
 
 -   `access_key` (string) - The access key used to communicate with AWS. [Learn
-    how to set this.](/docs/builders/amazon.html#specifying-amazon-credentials)
+    how to set this](/docs/builders/amazon.html#specifying-amazon-credentials)
 
 -   `ami_name` (string) - The name of the resulting AMI that will appear when
     managing AMIs in the AWS console or via APIs. This must be unique. To help
@@ -66,7 +66,7 @@ each category, the available configuration keys are alphabetized.
     engine](/docs/templates/engine.html) for more info)
 
 -   `secret_key` (string) - The secret key used to communicate with AWS. [Learn
-    how to set this.](/docs/builders/amazon.html#specifying-amazon-credentials)
+    how to set this](/docs/builders/amazon.html#specifying-amazon-credentials)
 
 -   `source_ami` (string) - The source AMI whose root volume will be copied and
     provisioned on the currently running instance. This must be an EBS-backed AMI
