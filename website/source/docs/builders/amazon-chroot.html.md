@@ -101,8 +101,8 @@ each category, the available configuration keys are alphabetized.
 
 -   `chroot_mounts` (array of array of strings) - This is a list of devices
     to mount into the chroot environment. This configuration parameter
-    requires some additional documentation which is in the "Chroot Mounts"
-    section below. Please read that section for more information on how to
+    requires some additional documentation which is in the [Chroot Mounts](#Chroot Mounts)
+    section. Please read that section for more information on how to
     use this.
 
 -   `command_wrapper` (string) - How to run shell commands. This defaults to
