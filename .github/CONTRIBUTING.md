@@ -127,8 +127,8 @@ Packer project.
   Packer release. The core team takes care of updating the CHANGELOG as they
   merge.
 
-1. In rare cases, we might decide that a PR should be closed. We'll make sure to
-  provide clear reasoning when this happens.
+1. In rare cases, we might decide that a PR should be closed without merging.
+  We'll make sure to provide clear reasoning when this happens.
 
 ### Tips for Working on Packer
 
