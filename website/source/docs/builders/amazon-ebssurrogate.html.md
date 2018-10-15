@@ -36,7 +36,7 @@ builder.
 ### Required:
 
 -   `access_key` (string) - The access key used to communicate with AWS. [Learn
-    how to set this.](/docs/builders/amazon.html#specifying-amazon-credentials)
+    how to set this](/docs/builders/amazon.html#specifying-amazon-credentials)
 
 -   `instance_type` (string) - The EC2 instance type to use while building the
     AMI, such as `m1.small`.
@@ -45,7 +45,7 @@ builder.
     launch the EC2 instance to create the AMI.
 
 -   `secret_key` (string) - The secret key used to communicate with AWS. [Learn
-    how to set this.](/docs/builders/amazon.html#specifying-amazon-credentials)
+    how to set this](/docs/builders/amazon.html#specifying-amazon-credentials)
 
 -   `source_ami` (string) - The initial AMI used as a base for the newly
     created machine. `source_ami_filter` may be used instead to populate this
