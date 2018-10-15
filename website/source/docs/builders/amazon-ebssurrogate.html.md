@@ -20,7 +20,7 @@ This builder can therefore be used to bootstrap scratch-build images - for
 example FreeBSD or Ubuntu using ZFS as the root file system.
 
 This is all done in your own AWS account. The builder will create temporary key
-pairs, security group rules, etc. that provide it temporary access to the
+pairs, security group rules, etc., that provide it temporary access to the
 instance while the image is being created.
 
 ## Configuration Reference
