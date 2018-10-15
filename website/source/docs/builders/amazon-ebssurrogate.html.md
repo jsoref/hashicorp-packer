@@ -19,13 +19,13 @@ then snapshotting and creating the AMI from that volume.
 This builder can therefore be used to bootstrap scratch-build images - for
 example FreeBSD or Ubuntu using ZFS as the root file system.
 
-This is all done in your own AWS account. The builder will create temporary key
+This is all done in your own AWS account. This builder will create temporary key
 pairs, security group rules, etc., that provide it temporary access to the
 instance while the image is being created.
 
 ## Configuration Reference
 
-There are many configuration options available for the builder. They are
+There are many configuration options available for this builder. They are
 segmented below into two categories: required and optional parameters. Within
 each category, the available configuration keys are alphabetized.
 
@@ -543,7 +543,7 @@ or [for Windows](http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/finding-a
 
 ## Accessing the Instance to Debug
 
-If you need to access the instance to debug for some reason, run the builder
+If you need to access the instance to debug for some reason, run this builder
 with the `-debug` flag. In debug mode, the Amazon builder will save the private
 key in the current directory and will output the DNS or IP information as well.
 You can use this information to access the instance as it is running.
