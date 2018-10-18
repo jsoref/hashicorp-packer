@@ -79,29 +79,29 @@ builder.
         example, `/dev/sdh` or `xvdh`). Required for every device in the
         block device mapping.
 
-    -   `encrypted` (boolean) - Indicates whether or not to encrypt the volume
+    -   `encrypted` (boolean) - Indicates whether or not to encrypt the volume.
 
     -   `iops` (number) - The number of I/O operations per second (IOPS) that the
         volume supports. See the documentation on
         [IOPs](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_EbsBlockDevice.html)
-        for more information
+        for more information.
 
     -   `no_device` (boolean) - Suppresses the specified device included in the
-        block device mapping of the AMI
+        block device mapping of the AMI.
 
-    -   `snapshot_id` (string) - The ID of the snapshot
+    -   `snapshot_id` (string) - The ID of the snapshot.
 
     -   `virtual_name` (string) - The virtual device name. See the documentation on
         [Block Device
         Mapping](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_BlockDeviceMapping.html)
-        for more information
+        for more information.
 
     -   `volume_size` (number) - The size of the volume, in GiB. Required if not
-        specifying a `snapshot_id`
+        specifying a `snapshot_id`.
 
-    -   `volume_type` (string) - The volume type. `gp2` for General Purpose (SSD)
+    -   `volume_type` (string) - The volume type. (`gp2` for General Purpose (SSD)
         volumes, `io1` for Provisioned IOPS (SSD) volumes, and `standard` for Magnetic
-        volumes
+        volumes)
 
 -   `ami_description` (string) - The description to set for the
     resulting AMI(s). By default this description is empty. This is a
