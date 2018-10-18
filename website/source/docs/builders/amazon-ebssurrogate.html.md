@@ -195,9 +195,9 @@ builder.
     Standard](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/t2-std.html)
     instance instead.
 
-    To use T2 Unlimited you must use a T2 instance type e.g. `t2.micro`.
+    To use T2 Unlimited you must use a T2 instance type, e.g., `t2.micro`.
     Additionally, T2 Unlimited cannot be used in conjunction with Spot
-    Instances e.g. when the `spot_price` option has been configured.
+    Instances, e.g., when the `spot_price` option has been configured.
     Attempting to do so will cause an error.
 
     !&gt; **Warning!** Additional costs may be incurred by enabling T2
