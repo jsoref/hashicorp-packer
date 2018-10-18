@@ -344,9 +344,9 @@ builder.
         is valid.
 
     -   `owners` (array of strings) - Filters the images by their owner. You may
-        specify one or more AWS account IDs, "self" (which will use the account
+        specify one or more AWS account IDs, `self` (which will use the account
         whose credentials you are using to run Packer), or an AWS owner alias:
-        for example, "amazon", "aws-marketplace", or "microsoft".
+        for example, `amazon`, `aws-marketplace`, or `microsoft`.
         This option is required for security reasons.
 
 
