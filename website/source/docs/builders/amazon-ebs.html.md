@@ -40,18 +40,18 @@ segmented below into two categories: required and optional parameters. Within
 each category, the available configuration keys are alphabetized.
 
 In addition to the options listed here, a
-[communicator](../templates/communicator.html.md) can be configured for this
+[communicator](../templates/communicator.html) can be configured for this
 builder.
 
 ### Required:
 
 -   `access_key` (string) - The access key used to communicate with AWS. [Learn
-    how to set this](amazon.html.md#specifying-amazon-credentials)
+    how to set this](amazon.html#specifying-amazon-credentials)
 
 -   `ami_name` (string) - The name of the resulting AMI that will appear when
     managing AMIs in the AWS console or via APIs. This must be unique. To help
     make this unique, use a function like `timestamp` (see [template
-    engine](../templates/engine.html.md) for more info).
+    engine](../templates/engine.html) for more info).
 
 -   `instance_type` (string) - The EC2 instance type to use while building the
     AMI, such as `t2.small`.
@@ -60,7 +60,7 @@ builder.
     launch the EC2 instance to create the AMI.
 
 -   `secret_key` (string) - The secret key used to communicate with AWS. [Learn
-    how to set this](amazon.html.md#specifying-amazon-credentials)
+    how to set this](amazon.html#specifying-amazon-credentials)
 
 -   `source_ami` (string) - The initial AMI used as a base for the newly
     created machine. `source_ami_filter` may be used instead to populate this
@@ -112,7 +112,7 @@ builder.
 
 -   `ami_description` (string) - The description to set for the
     resulting AMI(s). By default this description is empty. This is a
-    [template engine](../templates/engine.html.md),
+    [template engine](../templates/engine.html),
     see [Build template data](#build-template-data) for more information.
 
 -   `ami_groups` (array of strings) - A list of groups that have access to
@@ -259,13 +259,13 @@ builder.
 -   `run_tags` (object of key/value strings) - Tags to apply to the instance
     that is *launched* to create the AMI. These tags are *not* applied to the
     resulting AMI unless they're duplicated in `tags`. This is a
-    [template engine](../templates/engine.html.md),
+    [template engine](../templates/engine.html),
     see [Build template data](#build-template-data) for more information.
 
 -   `run_volume_tags` (object of key/value strings) - Tags to apply to the volumes
     that are *launched* to create the AMI. These tags are *not* applied to the
     resulting AMI unless they're duplicated in `tags`. This is a
-    [template engine](../templates/engine.html.md),
+    [template engine](../templates/engine.html),
     see [Build template data](#build-template-data) for more information.
 
 -   `security_group_id` (string) - The ID (*not* the name) of the security group
@@ -321,7 +321,7 @@ builder.
 
 -   `snapshot_tags` (object of key/value strings) - Tags to apply to snapshot.
     They will override AMI tags if already applied to snapshot. This is a
-    [template engine](../templates/engine.html.md),
+    [template engine](../templates/engine.html),
     see [Build template data](#build-template-data) for more information.
 
 -   `source_ami_filter` (object) - Filters used to populate the `source_ami` field.
@@ -392,8 +392,8 @@ builder.
     used for SSH with the machine. The key must match a key pair name loaded
     up into Amazon EC2. By default, this is blank, and Packer will
     generate a temporary keypair unless
-    [`ssh_password`](../templates/communicator.html.md#ssh_password) is used.
-    [`ssh_private_key_file`](../templates/communicator.html.md#ssh_private_key_file)
+    [`ssh_password`](../templates/communicator.html#ssh_password) is used.
+    [`ssh_private_key_file`](../templates/communicator.html#ssh_private_key_file)
     or `ssh_agent_auth` must be specified when `ssh_keypair_name` is utilized.
 
 -   `ssh_agent_auth` (boolean) - If true, the local SSH agent will be used to
@@ -457,7 +457,7 @@ builder.
 
 -   `tags` (object of key/value strings) - Tags applied to the AMI and
     relevant snapshots. This is a
-    [template engine](../templates/engine.html.md),
+    [template engine](../templates/engine.html),
     see [Build template data](#build-template-data) for more information.
 
 -   `temporary_key_pair_name` (string) - The name of the temporary key pair

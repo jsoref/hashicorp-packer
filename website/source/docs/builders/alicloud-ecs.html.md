@@ -18,7 +18,7 @@ customized images based on an existing base images.
 
 The following configuration options are available for building Alicloud images.
 In addition to the options listed here,
-a [communicator](../templates/communicator.html.md) can be configured for this
+a [communicator](../templates/communicator.html) can be configured for this
 builder.
 
 ### Required:
